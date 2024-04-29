@@ -9,9 +9,7 @@ Este projeto tem como objetivo principal servir como uma janela para o meu mundo
 - [Demonstração](#demonstração)
 - [Instalação](#instalação)
 - [Uso](#uso)
-- [Contribuição](#contribuição)
 - [Créditos](#créditos)
-- [Licença](#licença)
 
 ## Demonstração
 Menu Inicial do portifólio DESKTOP
@@ -29,5 +27,3 @@ Navegue pelo site, experimente clicar nos botões e ver suas animações!
     Alguns dos conceitos que foram aplicados foram ensinados nas aulas desse mestre do Front-End. Além de me ensinar em sala de aula me tirou dúvidas por fora e me ajudou a resolver alguns bugs
 - Canal no Youtube: @InteliogiaDev. Principal participante onde ensinou o passo-a-passo para o projeto ser feito, ajudando na responsividade
 
-## Licença
-Inclua a licença do seu projeto aqui.

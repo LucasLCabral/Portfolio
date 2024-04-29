@@ -1,0 +1,619 @@
+
+/*Estilizacao geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+:root{
+    --rosa-principal--: #E91C5D ;
+    --rosa-claro--: #f44079;
+    --roxo-degrade--: #A40076;
+}
+
+body{
+    background-color: #1B1B1B;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.interface #img-logo{
+    width: 70px;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-style button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    border-style: none;
+    color: white;
+    background-color: var(--rosa-principal--);
+    transition: 0.2s ease-in, 0.3s ease-out;
+}
+
+.btn-style button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #f44079;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;    
+    text-align: center;
+}
+
+h2.titulo span{
+    font-size: 40px;
+    background-image: linear-gradient(var(--roxo-degrade--),var(--rosa-principal--));
+    -webkit-text-fill-color: transparent; /* Deixa a cor do texto transparente */
+    background-clip: text; /* Coloca a cor do fundo como a cor do texto */
+}
+
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav.menu-desktop a{
+    color: rgb(167, 167, 167);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+header nav.menu-desktop a:hover{
+    color: white;
+    font-weight: 400;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO MENU MOBILE */
+.btn-abrir-menu i{
+    color: var(--rosa-principal--);
+    font-size: 40px;
+}
+
+
+
+.menu-mobile{
+    background-color: #1B1B1B;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 60%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile nav ul li{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: var(--rosa-principal--);
+}
+
+.overlay-menu{
+    background-color: #000000a2; 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+ }
+
+.btn-fechar{
+    text-align: left;
+    padding: 20px 4%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: var(--rosa-principal--);
+    font-size: 35px
+}
+
+.btn-abrir-menu{
+    z-index: 77777;
+    display: none;
+}
+
+
+
+/* Estilizacao geral site */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: white;
+    font-size: 42px;
+    line-height: 37px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    font-size: 45px;
+    background-image: linear-gradient(var(--roxo-degrade--),var(--rosa-principal--));
+    -webkit-text-fill-color: transparent; /* Deixa a cor do texto transparente */
+    background-clip: text; /* Coloca a cor do fundo como a cor do texto */
+}
+
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+}
+.topo-do-site .txt-topo-site p span{
+    color: var(--rosa-principal--);
+    margin: 40px 0;
+    font-weight: 500;
+}
+
+.icon-style{
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+}
+
+.topo-do-site .icon-style div a img{
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+
+.topo-do-site .icon-style div a img:hover{
+    filter: drop-shadow(0px 0px 8px #f44079);
+}
+
+
+
+.topo-do-site .img-topo-site img{
+    margin-left: -100px;
+    position: relative;
+    animation: flutuar 1.5s ease-in-out infinite alternate;
+}
+
+#foto-perfil{
+    width: 700px;
+    height: auto;
+}
+
+/* Animação para foto flutuar */
+@keyframes flutuar {
+    0%{
+        top: 0;
+
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* Estilos das habilidades */
+section.habilidades{
+    padding: 40px 4%;
+}
+
+section.habilidades .flex{
+    gap: 60px;
+}
+
+.habilidades .habilidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 25px;
+    margin-top: 45px;
+    transition: 0.2s ease;
+}
+
+.habilidades .habilidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff76;
+    cursor: grab;
+}
+
+.habilidades .habilidades-box img{
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.habilidades .habilidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: white;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre #destaque-rosa{
+    font-size: 40px;
+    display: block;
+    background-image: linear-gradient(var(--roxo-degrade--),var(--rosa-principal--));
+    -webkit-text-fill-color: transparent; /* Deixa a cor do texto transparente */
+    background-clip: text; /* Coloca a cor do fundo como a cor do texto */
+}
+
+
+.sobre .txt-sobre p {
+    margin: 30px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre p span{
+    color: var(--rosa-principal--);
+    font-weight: 500;
+}
+
+
+.btn-style .btn-sobre-mim{
+    padding: 20 15px;
+}
+
+
+.sobre .img-sobre #lucas-sobre-mim{
+    width: 400px;
+}
+
+/* ESTILO PORTIFOLIO */
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff10;
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 3s;
+    cursor: pointer;
+    border-radius: 5%;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    background-color: #00000075;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* ESTILO FORMULARIO */ 
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #343434;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 250px;
+}
+
+form .btn-enviar{
+    margin-top: 25px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 180px;
+    background-color: var(--rosa-principal--);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* ESTILO FOOTER */
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff10;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .logo-footer{
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+footer .logo-footer:hover{
+    transform: scale(1.03);
+}
+
+footer img{
+    width: 70px;
+}
+
+.icon-style-footer{
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+footer .icon-style-footer div a img{
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
+}
+
+footer .icon-style-footer div a img:hover{
+    filter: drop-shadow(0px 0px 8px #f44079);
+}
+
+
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 3px solid var(--rosa-principal--);
+}
+
+footer .line-footer p i{
+    color: var(--rosa-principal--);
+    font-size: 25px;
+}
+
+footer .line-footer p a{
+    color: white;
+}
+
+footer h5{
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1200px) {
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        font-size: 34px;    
+    }
+
+    h2.titulo span{
+        font-size: 36px; 
+    }
+
+
+    /* CABEÇALHO */
+    section.topo-do-site{
+        padding: 40px 10%;
+    }
+
+    .topo-do-site .txt-topo-site p{
+        margin: 40px 8%;
+    }
+
+    .topo-do-site .txt-topo-site h1{
+        margin: 40px 8%;
+    }
+
+
+
+    .menu-desktop, .btn-nav{
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    section.topo-do-site .icon-style{
+        gap: 90px;
+    }
+    
+    #foto-perfil{
+        width: 500px;
+        margin-top: -160px;
+        margin-bottom: -150px;
+        margin-left: 7px;       
+    }
+    
+
+    /* HABILIDADES */
+
+    section.habilidades{
+        padding: 40px 8%;
+    }
+
+    section.habilidades .flex{
+        gap: 10px;
+    }
+
+    .sobre .img-sobre #lucas-sobre-mim{
+        width: 350px;
+        border-radius: 10%;
+    }
+
+    /* SOBRE */
+    section.sobre{
+        padding: 80px 8%;
+    }
+
+    section.sobre .btn-style{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        text-align: center;
+    }
+    .sobre .txt-sobre h2 span{
+        font-size: 36px;
+    }
+
+    /* PORTIFOLIO */
+    section.portifolio{
+        padding: 80px 8%;
+    }
+
+    section.portifolio .flex{
+        gap: 40px;
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    /* FOOTER */
+
+    footer .flex{
+        flex-direction: column;
+    }
+
+    footer .logo-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-top: -30px;
+    }
+
+    footer .icon-style-footer div a img{
+        justify-content:space-evenly;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+
+    .btn-abrir-menu{
+        display: block;
+    }
+}

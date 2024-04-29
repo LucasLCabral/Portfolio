@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTS -->
+
+    <!-- ICONES BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FIM ICONES BOOSTSTRAP -->
+
+    <!--ADICIONANDO CSS EXTERNO-->
+    <link rel="stylesheet" href="./style.css">
+
+    <!--ICONE DA PAGINA-->
+    <link rel="shortcut icon" href="img//icones/icone-pagina.png">
+    <title>Lucas L. Cabral</title>
+</head>
+
+<body>
+    <header id="home">
+        <div class="interface"> <!--CLASSE UNIVERSAL DO SITE-->
+
+            <!--DIV LOGO-->
+            <div class="logo">
+                <a href="#home">
+                    <img src="./img/icones/logo-pagina.png" alt="Logo do portifolio" id="img-logo">
+                </a>
+            </div> 
+
+            <!--NAV BAR-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <!--BOTAO -->
+            <div class="btn-style btn-nav">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div> <!--menu mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div> <!-- interface -->
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site"> <!--TEXTO QUE FICARA NA ESQUERDA DA TELA-->
+                        <h1>OLÁ, BEM VINDO AO MEU PORTIFÓLIO<span>!</span></h1>
+                        <p>Atualmente cursando Engenharia de Software na <span>FIAP</span>, imergindo em tecnologias como HTML, CSS, JavaScript, Python, C++. Foco em aprendizado contínuo e aprimoramento para acompanhar as futuras demandas da indústria. Aberto a estágios ou programas de trainee em empresas inovadoras, pronto para contribuir com criatividade e inspirado pelas trajetórias das Big Techs. Ansioso para fazer parte do futuro da tecnologia.
+                        </p>
+                        <!--ICON REDES SOCIAIS-->
+                        <div class="icon-style">
+                            <div>
+                                <a href="https://www.linkedin.com/in/lucasludovicocabral/" target="_blank">
+                                    <img src="img/icones/redes sociais/linkedin-icon.png" alt="linkedin-icon">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://github.com/LucasLCabral" target="_blank">
+                                    <img src="img/icones/redes sociais/github-icon.png" alt="github-icon">
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="https://cursos.alura.com.br/user/lucascabraal/fullCertificate/d3336edc853c284fc835e30adfdc52cc" target="_blank">
+                                    <img src="img/icones/redes sociais/alura-icon.png" alt="alura-icon">
+                                </a>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    <div class="img-topo-site"> <!--IMAGEM QUE FICARA NA DIREITA DA TELA-->
+                        <img src="./img/fotos-lucas/lucas-perfil-suave.png" alt="" id="foto-perfil">
+                    </div>
+                </div>
+            </div> 
+            
+        </section> <!-- FIM TOPO DO SITE-->
+
+        <section class="habilidades">
+            <div class="interface">
+                <h2 class="titulo" id="habilidades">MINHAS <span>HABILIDADES.</span></h2>
+                <div class="flex">
+                    <div class="habilidades-box">
+                        <img src="img/icones/tecnologias/javascript-icon.png" id="javascript-icon">
+                        <h3>JavaScript</h3>
+                        <p>Atualmente estudando JavaScript pela faculdade e procurando ganhar conhecimentos para ser um dev FullStack e futuramente aprofundar em bibliotecas como React.</p>
+                    </div>
+
+                    <div class="habilidades-box">
+                        <img src="img/icones/tecnologias/front-end-icon.png" id="front-end-icon">
+                        <h3>HTML5 & CSS3</h3>
+                        <p>Estou aprendendo HTML5 para estrutura e CSS3 para estilo, criando páginas web dinâmicas e responsivas para ótimas experiências dos usuários.</p>
+                    </div>
+
+                    <div class="habilidades-box">
+                        <img src="img/icones/tecnologias/python-icon.png" id="python-icon">
+                        <h3>Python</h3>
+                        <p>Estou aprendendo Python, futuros estudos em diversas áreas, como e Data Science, IA, Data Analytic, Machine Learning.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section> <!-- FIM SECTION HABILIDADES-->
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+              <div class="flex">
+                <div class="img-sobre">
+                    <img src="img/fotos-lucas/lucas-sobre-mim.png" id="lucas-sobre-mim">
+                </div>
+
+                <div class="txt-sobre">
+                    <h2>MUITO PRAZER, <span id="destaque-rosa">SOU O LUCAS.</span></h2>
+                    <p>Meu nome é Lucas Ludovico Cabral e sou apaixonado pela tecnologia em constante busca por conhecimento e oportunidades de crescimento. Atualmente, estou cursando <span>Engenharia de Software - FIAP</span>, onde tenho a oportunidade de explorar diversas tecnologias, incluindo HTML, CSS, JavaScript, React, Python.</p>
+                    <p>Minha paixão pela área de tecnologia me inspira a buscar oportunidades de aprendizado e desenvolvimento constantes. Estou dedicando este ano para aprimorar minhas habilidades e conhecimentos, com o objetivo de me preparar para oportunidades futuras na indústria de tecnologia.</p>
+                    <p>Embora meu foco principal seja no estudo e no aprimoramento das habilidades técnicas, estou aberto a oportunidades de estágio ou programas de trainee em empresas de tecnologia inovadoras. Tenho interesse em fazer parte de uma equipe dinâmica onde eu possa contribuir com criatividade e inovação, inspirado pelas histórias de sucesso das Big Techs como Amazon, Apple, Facebook e Google.
+                    Estou animado para explorar novas oportunidades e fazer parte do futuro da tecnologia. Vamos construir juntos!</p>
+                    <div class="btn-style">
+                        <a><button class="btn-sobre-mim">Entre em contato</button></a>
+                    </div>
+                </div>
+              </div>
+                
+            </div>
+        </section> <!-- SOBRE -->
+
+        <section class="portifolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTIFÓLIO</span></h2>
+                <div class="flex">
+                    <!-- Imagens dos projetos -->
+                    <div class="img-port" style="background-image: url(img/img-teste-projeto.png);">
+                        <div class="overlay">Projeto 1</div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(img/img-teste-projeto.png);">
+                        <div class="overlay">Projeto 2</div>
+                    </div>
+
+                    <div class="img-port" style="background-image: url(img/img-teste-projeto.png);">
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+
+                </div> <!-- flex -->
+            </div> <!-- interface -->
+        </section> <!-- FIM SECTION PORTIFOLIO-->
+
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO!</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome:" required> <!-- place holder serve para mostrar o texto inicial-->
+                    <input type="text" name="" id="" placeholder="Seu email:" required> <!-- required serve para fazer o campo ser obrigatorio -->
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div> <!-- interface -->
+        </section> <!--FIM SECTION FORMULARIO-->
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <a href="#home">
+                        <img src="img/icones/logo-pagina.png" alt="Logotipo Portifolio Lucas">
+                        </a>
+                    </div>
+
+                    <div class="icon-style-footer">
+                        <div>
+                            <a href="https://www.linkedin.com/in/lucasludovicocabral/" target="_blank">
+                                <img src="img/icones/redes sociais/linkedin-icon.png" alt="linkedin-icon">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://github.com/LucasLCabral" target="_blank">
+                                <img src="img/icones/redes sociais/github-icon.png" alt="github-icon">
+                            </a>
+                        </div>
+
+                        <div>
+                            <a href="https://cursos.alura.com.br/user/lucascabraal/fullCertificate/d3336edc853c284fc835e30adfdc52cc" target="_blank">
+                                <img src="img/icones/redes sociais/alura-icon.png" alt="alura-icon">
+                            </a>
+                        </div>
+                </div>
+                </div> <!-- icon style -->
+
+            </div> <!-- line footer -->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-at"></i> <a href="mailto:lucasludovicocabraal@gmail.com">lucasludovicocabraal@gmail.com</a></p>
+            </div> <!-- line footer -->
+            <h5>@2024 - Todos direitos reservados. Lucas Ludovico Cabral</h5>
+        </div><!-- interface -->
+    </footer>
+    <!--JAVA SCRIPT EXTERNO-->
+    <script src="script.js" defer></script>
+</body>
+</html>

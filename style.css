@@ -143,7 +143,7 @@ header nav.menu-desktop ul li{
 }
 
 .overlay-menu{
-    background-color: #000000a2; 
+    background-color: #d6d4d4cb; 
     width: 100%;
     height: 100%;
     position: fixed;
@@ -374,6 +374,11 @@ section.portifolio .flex{
     transition: 0.5s;
 }
 
+.overlay a{
+    color: white;
+    text-decoration: none;
+}    
+
 .overlay:hover{
     opacity: 1;
 }
@@ -518,8 +523,6 @@ footer h5{
     .topo-do-site .txt-topo-site h1{
         margin: 40px 8%;
     }
-
-
 
     .menu-desktop, .btn-nav{
         display: none;

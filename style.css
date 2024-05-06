@@ -541,9 +541,10 @@ footer h5{
     }
     
     #foto-perfil{
-        width: 110%;
+        width: 100%;
+        height: auto;
         margin-top: -160px;
-        margin-left: 1%;
+        margin-left: 4px;
         margin-bottom: -150px;
               
     }

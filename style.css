@@ -143,7 +143,7 @@ header nav.menu-desktop ul li{
 }
 
 .overlay-menu{
-    background-color: #d6d4d4cb; 
+    background-color: #1f1f1fe8; 
     width: 100%;
     height: 100%;
     position: fixed;
@@ -529,6 +529,9 @@ footer h5{
     }
 
     /* TOPO DO SITE */
+    .topo-do-site img{
+        text-align: center;
+    }
     .topo-do-site .flex{
         flex-direction: column-reverse;
     }
@@ -538,10 +541,11 @@ footer h5{
     }
     
     #foto-perfil{
-        width: 500px;
+        width: 110%;
         margin-top: -160px;
+        margin-left: 1%;
         margin-bottom: -150px;
-        margin-left: 7px;       
+              
     }
     
 
@@ -581,7 +585,7 @@ footer h5{
 
     /* PORTIFOLIO */
     section.portifolio{
-        padding: 40px 8%;
+        padding: 80px 4%;
     }
 
     section.portifolio .flex{

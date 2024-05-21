@@ -1,4 +1,4 @@
-# Portifólio de Projetos e Apresentação!
+# Portfólio de Projetos e Apresentação!
 
 Portfólio Pessoal
 Meu portfólio pessoal é uma apresentação virtual que destaca meus objetivos, experiências e habilidades como um profissional da área de engenharia de software. Como graduado em Engenharia de Software pela FIAP (Faculdade de Informática e Administração Paulista) 🎓, busco criar uma plataforma que não apenas demonstre minha formação acadêmica, mas também ofereça uma visão abrangente das minhas capacidades e interesses.
